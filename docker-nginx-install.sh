@@ -33,4 +33,4 @@ echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 
 sudo tee /etc/apt/preferences.d/99nginx
 
 sudo apt update
-sudo apt install nginx -y
+#sudo apt install nginx -y
