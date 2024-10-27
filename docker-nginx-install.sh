@@ -34,3 +34,11 @@ sudo tee /etc/apt/preferences.d/99nginx
     
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install nginx -y
+
+##########
+
+sudo snap install --classic certbot
+
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
+telinit 6
