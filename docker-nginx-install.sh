@@ -16,6 +16,8 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
+sudo usermod -aG docker "$user"
+
 ##########
 
 sudo apt-get install curl gnupg2 ca-certificates lsb-release ubuntu-keyring -y
@@ -41,4 +43,4 @@ sudo snap install --classic certbot
 
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
-telinit 6
+sudo reboot #telinit 6
